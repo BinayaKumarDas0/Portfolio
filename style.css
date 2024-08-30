@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 100;
+  padding: 100;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(img/bg.png);
+  background-size: cover;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+.logo {
+  max-height: 60px;
+}
+/* Add this to your style.css file */
+.logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+  .logo-name {
+    font-size: 3em;
+    font-weight: bold;
+    margin-left: 10px; /* Space between logo image and name */
+  }
+  span{
+    color: rgb(239, 130, 36);
+  }
+/* Remove or comment out this CSS if you are no longer using the profile photo */
+.profile-photo {
+    width: 10px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%; /* Makes the photo a circle */
+    display: block;
+    margin: 50px auto; /* Center the photo and add space around it */
+    float: right;
+    width: 30%
+  }
+  .my-element {
+    position: absolute; /* or relative */
+    left: 50000%;
+    top: 50000%;
+    transform: translate(-50%, -50%);
+  }
+  
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
+}
+nav ul li a:hover {
+  color: #fd4766;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+.content {
+  position: absolute;
+  top: 25%;
+  left: 9%;
+}
+.content .title {
+  color: #0a0a0a;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content h1 {
+  color: #1f1f25;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 70%;
+}
+.content h1 span {
+  color: #fd4766;
+}
+.content p {
+  width: 55%;
+  color: #202020;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+/* Projects Section */
+.projects {
+  padding: 10px;
+  background: #fff;
+}
+
+.projects h2 {
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+}
+/* Contact Section */
+.contact {
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact ul li {
+  margin: 10px 0;
+}
+
+.contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
